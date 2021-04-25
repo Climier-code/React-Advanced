@@ -42,7 +42,7 @@ export const write = async (ctx) => {
     title,
     body,
     tags,
-    user: ctx.status.user,
+    user: ctx.state.user,
   });
   try {
     await post.save();
