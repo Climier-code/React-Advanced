@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Movie from './Movie';
-import './App.css';
+import Movie from '../components/Movie';
+import './Home.css';
 
-function MovieList() {
+function Home() {
 
     const [isLoading, setIsLoading] = useState(true);
     const [movies, setMoives] = useState([]);
@@ -45,4 +45,4 @@ function MovieList() {
     );
 };
 
-export default MovieList;
+export default Home;

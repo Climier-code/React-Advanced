@@ -1,11 +1,20 @@
 import React from 'react';
-import MovieList from './MovieList';
-import './App.css';
+import Home from './routes/Home';
+import About from './routes/About';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import Detail from './routes/Detail';
+import "./App.css";
 
 function App() {
 
   return (
-    <MovieList />
+    <BrowserRouter>
+      <Navigation />
+      <Route path="/" component={Home} exact />
+      <Route path="/about" component={About} />
+      <Route path="/movie/:id" component={Detail} />
+    </BrowserRouter>
   );
 };
 
