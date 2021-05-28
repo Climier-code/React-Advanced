@@ -1,5 +1,8 @@
 # Movie App
+
 > 리액트를 이용한 웹페이지를 만들어보자
+
+> < Nomad Coder >의 Movie app 프로젝트에서 상세페이지 기능 추가한 버전
 
 ## Preview
 
